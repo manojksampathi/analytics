@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: crest_raw
+    description: "Raw data loaded from CSV exports of operational systems"
+    database: retail-analytics-495420
+    schema: crest_raw
+    tables:
+      - name: raw_orders
+        description: "Header-level DTC orders (one row per order)"
+      - name: raw_order_items
+        description: "Line items within each DTC order"
+      - name: raw_customers
+        description: "Customer master data"
+      - name: raw_products
+        description: "Product catalog"
+      - name: raw_stores
+        description: "Store locations"
+      - name: raw_promotions
+        description: "Promotional campaigns"
+      - name: raw_returns
+        description: "Customer returns"
+      - name: raw_sales_targets
+        description: "Monthly sales targets by store/region/category"
+      - name: raw_wholesale_partners
+        description: "Wholesale partner master data"
+      - name: raw_wholesale_orders
+        description: "Header-level wholesale orders"
+      - name: raw_wholesale_order_items
+        description: "Line items within each wholesale order"
